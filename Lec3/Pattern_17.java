@@ -1,16 +1,16 @@
-package Lec2;
+package Lec3;
 
 import java.util.Scanner;
 
-public class Pattern_21 {
+public class Pattern_17 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int row = 1;
-		int star = 1;
-		int space = 2 * n - 3;
+		int star = n / 2;
+		int space = 1;
 		while (row <= n) {
 			// star
 			int i = 1;
@@ -26,20 +26,21 @@ public class Pattern_21 {
 			}
 			// star
 			int k = 1;
-			if (row == n) {
-				k = 2;
-			}
 			while (k <= star) {
 				System.out.print("* ");
 				k++;
 			}
-			// next row Prep
+			// Mirror
+			if (row <= n / 2) {
+				star--;
+				space += 2;
+			} else {
+				star++;
+				space -= 2;
+			}
 			System.out.println();
 			row++;
-			star++;
-			space -= 2; // space = space - 2;
 		}
-
 	}
 
 }
