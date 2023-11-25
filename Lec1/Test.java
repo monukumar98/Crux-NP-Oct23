@@ -4,9 +4,20 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Welcome to Coding Blocks");
-		System.out.print("Welcome to Coding Blocks");
-		System.out.println("Hey");
+		int n=1000000
+		System.out.println(n);
+
+		for(int i=1; i<=n/3; i++){
+			System.out.println(500000000);
+		}
+		for(int i=1; i<=n/3; i++){
+			System.out.println(700000000);
+		}
+		for(int i=1; i<=n/3+1; i++){
+			System.out.println(i);
+		}
+		
+		
 
 	}
 
