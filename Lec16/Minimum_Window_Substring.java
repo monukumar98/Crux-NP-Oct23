@@ -32,10 +32,8 @@ public class Minimum_Window_Substring {
 				// shrink
 				while (freqs[s.charAt(si)] > freqt[s.charAt(si)]) {
 					freqs[s.charAt(si)]--;
-
 					si++;
 				}
-
 				// ans
 				if (len > ei - si + 1) {
 					len = ei - si + 1;
