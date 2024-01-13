@@ -4,7 +4,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=1000000
+		int n=1000000;
 		System.out.println(n);
 
 		for(int i=1; i<=n/3; i++){
