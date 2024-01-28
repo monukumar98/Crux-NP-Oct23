@@ -1,15 +1,27 @@
-package Lec23;
+package Lec24;
 
-public class Merge_Two_Sorted_Array {
+public class Merge_Sort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr1 = { 2, 3, 5, 6, 7, 8, 9 };
-		int[] arr2 = { 1, 2, 5, 7, 11, 13, 15, 16 };
-		int[] a = Merge(arr1, arr2);
+		int[] arr = { 5, 3, 7, 2, 1 };
+		int[] a = Sort(arr, 0, arr.length - 1);
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}
+
+	}
+
+	public static int[] Sort(int[] arr, int si, int ei) {
+		if (si == ei) {
+			int[] bs = new int[1];
+			bs[0] = arr[si];
+			return bs;
+		}
+		int mid = (si + ei) / 2;
+		int[] f = Sort(arr, si, mid);
+		int[] s = Sort(arr, mid + 1, ei);
+		return Merge(f, s);
 
 	}
 
