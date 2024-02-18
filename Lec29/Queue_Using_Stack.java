@@ -39,12 +39,13 @@ public class Queue_Using_Stack {
 	public int getfront() throws Exception {
 		return ds.peek();
 	}
-public static void main(String[] args) throws Exception {
-	Queue_Using_Stack qs = new Queue_Using_Stack();
-	qs.Enqueue(10);
-	qs.Enqueue(20);
-	qs.Enqueue(30);
-	System.out.println(qs.getfront());
-}
+
+	public static void main(String[] args) throws Exception {
+		Queue_Using_Stack qs = new Queue_Using_Stack();
+		qs.Enqueue(10);
+		qs.Enqueue(20);
+		qs.Enqueue(30);
+		System.out.println(qs.getfront());
+	}
 
 }
