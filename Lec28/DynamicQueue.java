@@ -19,7 +19,7 @@ public class DynamicQueue extends Queue {
 		}
 		super.Enqueue(item);
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		DynamicQueue dq = new DynamicQueue();
 		dq.Enqueue(10);
