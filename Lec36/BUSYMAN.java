@@ -8,6 +8,7 @@ public class BUSYMAN {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// change krna hoga
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while (t > 0) {
